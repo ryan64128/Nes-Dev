@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"name": "Nes Dev",
+			"path": "."
+		},
+		{
+			"name": "Java",
+			"path": "../Java"
+		},
+		{
+			"name": "Nes Practice",
+			"path": "../Nes Practice"
+		}
+	],
+	"settings": {}
+}

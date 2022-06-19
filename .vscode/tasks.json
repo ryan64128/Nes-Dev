@@ -1,0 +1,44 @@
+{
+    "version": "2.0.0",
+    "args": [
+        "cd ~"
+    ],
+    "tasks": [
+        {
+            "label": "build rom",
+            "problemMatcher": {
+                "owner": "6502",
+                "fileLocation": [
+                    "relative",
+                    "${workspaceRoot}"
+                ],
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "severity": 3,
+                    "message": 4
+                }
+            },
+            "command": [
+                "/Users/ryanroberts/Documents/nesasm/nesasm"
+            ],
+            "args": [
+                "background.asm"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Run ROM in Emulator",
+            "command": [
+                "/Volumes/fceux-2.6.4-Darwin/fceux.app"
+            ],
+            "args": [
+                "sprites.nes"
+            ]
+        }
+    ]
+}
